@@ -1,0 +1,36 @@
+﻿.css-animation, .css-animation span {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+
+.css-animation span {
+    display: inline-block
+}
+
+.fade-in-bottom {
+    animation-name: fade-in-bottom
+}
+
+.fade-in-start {
+    animation-name: fade-in-start;
+}
+
+@keyframes fade-in-bottom {
+    from {
+        opacity: 0;
+        transform: translateY(100%);
+    }
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fade-in-start {
+    from {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    to {
+        opacity: 1
+    }
+}

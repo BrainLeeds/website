@@ -1,6 +1,6 @@
 ﻿svg {
     width: 40em;
-    max-width: 100%; /* Set a default max width */
+    max-width: 100%;
 }
 
 @media (max-width: 768px) {
