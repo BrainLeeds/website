@@ -29,4 +29,23 @@
     transform: scale(1.05);
 }
 
+.reveal-text {
+    position: relative;
+    font-size: 2rem;
+    color: transparent;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: reveal 2s ease-in-out forwards;
+}
+
+@keyframes reveal {
+    0% {
+        width: 0;
+        color: transparent;
+    }
+    100% {
+        width: 100%;
+    }
+}
+
 
