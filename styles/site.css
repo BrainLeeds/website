@@ -1,0 +1,117 @@
+﻿/* FONTS */
+
+@font-face {
+    font-family: Octarine;
+    src: url("../content/fonts/Octarine-Light.otf");
+}
+
+@font-face {
+    font-family: Octarine;
+    font-weight: bold;
+    src: url("../content/fonts/Octarine-Bold.otf");
+}
+
+@font-face {
+    font-family: PublicaPlay;
+    src: url("../content/fonts/PublicaPlay-Regular.otf");
+}
+
+/* GENERAL RESPONSIVENESS */
+
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+
+    svg {
+        max-width: 50%;
+    }
+}
+
+@media (min-width: 1920px) {
+    svg {
+        max-width: 25%;
+    }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+    box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+/* DEFAULTS */
+
+html {
+    font-size: 14px;
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    margin-bottom: 60px;
+    font-family: Octarine, sans-serif;
+}
+
+/* NAV LINK HOVER */
+
+.pink-underline {
+    display: inline-block;
+    position: relative;
+    padding-bottom: 0.25rem;
+}
+
+.pink-underline::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: pink;
+    transition: width 0.25s ease-out;
+}
+
+.pink-underline:hover::before {
+    width: 100%;
+}
+
+/* TEXT STYLING */
+
+.colour-pink {
+    color: pink;
+}
+
+.colour-gold {
+    color: gold;
+}
+
+.font-arial {
+    font-family: Arial, sans-serif;
+}
+
+.font-size-090 {
+    font-size: 0.90rem;
+}
+
+.font-size-115 {
+    font-size: 1.15rem;
+}
+
+.font-size-130 {
+    font-size: 1.30rem;
+}
+
+.font-size-135 {
+    font-size: 1.35rem;
+}
+
+.font-size-140 {
+    font-size: 1.40rem;
+}
+
+.font-size-250 {
+    font-size: 2.50rem;
+}
+
+.font-size-450 {
+    font-size: 4.50rem;
+}

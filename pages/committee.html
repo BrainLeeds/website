@@ -1,0 +1,194 @@
+﻿<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Committee</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="../styles/bootstrap-5.3.1-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../styles/site.css">
+    <link rel="stylesheet" href="../styles/animation.css">
+    
+    <style>
+        .slide-in {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            padding: 1rem;
+            background-color: rgba(0, 0, 0, 0.8);
+            opacity: 0;
+            transform: translateY(100%);
+            transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+        }
+
+        .slide-in:focus .overlay,
+        .slide-in:hover .overlay {
+            transform: translateY(0);
+            opacity: 1;
+        }
+        
+    </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg fixed-top navbar-fixed-top border-bottom bg-dark-subtle">
+    <div class="container">
+        <div class="navbar-brand fw-bolder font-size-140 colour-pink">BrainLeeds</div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto fw-bold">
+                <li class="nav-item">
+                    <a class="nav-link active pink-underline" aria-current="page" href="../index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active pink-underline" aria-current="page" href="../pages/about.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active pink-underline" aria-current="page" href="../pages/events.html">Events</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active pink-underline" aria-current="page" href="../pages/committee.html">Committee</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active pink-underline" aria-current="page" href="../pages/contact.html">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active pink-underline" aria-current="page" href="../pages/join.html">Become a Braniac!</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="container">
+    <div class="d-flex flex-column align-items-center p-5 pb-3 mt-5">
+        <h1 class="fw-bolder text-center text-white font-size-450 text-wrap">Meet the Committee</h1>
+        <h2 class="fw-bold text-center font-size-090 colour-pink text-wrap">The people who make BrainLeeds possible</h2>
+        <h3 class="text-centre text-white font-size-090 text-wrap">If you are on mobile, tap the images to see quotes.</h3>
+    </div>
+</div>
+
+<div class="container css-animation fade-in-bottom">
+    <div class="row">
+        <div class="col-sm p-4">
+            <h1 class="fw-bolder text-white font-size-250 text-wrap">President</h1>
+            <div class="position-relative slide-in ratio ratio-1x1 mb-3" tabindex="0">
+                <img src="../content/images/sponge.png" class="img-fluid rounded ratio ratio-1x1 mb-3" alt="Image of President">
+                <div class="overlay rounded-1">
+                    <p class="text-white fw-bold text-center mt-3 blockquote">"Put your heart, mind, and soul into even your smallest acts. This is the secret of success."</p>
+                </div>
+            </div>
+            <h2 class="fw-bold text-white font-size-115">SpongeBob Squarepants</h2>
+            <h2 class="fw-bold text-white font-size-090">3rd Year Medic</h2>
+        </div>
+        <div class="col-sm p-4">
+            <h1 class="fw-bolder text-white font-size-250 text-wrap">Vice President</h1>
+            <div class="position-relative slide-in ratio ratio-1x1 mb-3" tabindex="0">
+                <img src="../content/images/star.png" class="img-fluid rounded ratio ratio-1x1 mb-3" alt="Image of President">
+                <div class="overlay rounded-1">
+                    <p class="text-white fw-bold text-center mt-3 blockquote">"Put your heart, mind, and soul into even your smallest acts. This is the secret of success."</p>
+                </div>
+            </div>
+            <h2 class="fw-bold text-white font-size-115">Patrick Star</h2>
+            <h2 class="fw-bold text-white font-size-090">1st Year Medic</h2>
+        </div>
+        <div class="col-sm p-4">
+            <h1 class="fw-bolder text-white font-size-250 text-wrap">Vice President</h1>
+            <div class="position-relative slide-in ratio ratio-1x1 mb-3" tabindex="0">
+                <img src="../content/images/krabs.png" class="img-fluid rounded ratio ratio-1x1 mb-3" alt="Image of President">
+                <div class="overlay rounded-1">
+                    <p class="text-white fw-bold text-center mt-3 blockquote">"Put your heart, mind, and soul into even your smallest acts. This is the secret of success."</p>
+                </div>
+            </div>
+            <h2 class="fw-bold text-white font-size-115">Eugine Krabs</h2>
+            <h2 class="fw-bold text-white font-size-090">5th Year Medic</h2>
+        </div>
+        <div class="col-sm p-4">
+            <h1 class="fw-bolder text-white font-size-250 text-wrap">Secretary</h1>
+            <div class="position-relative slide-in ratio ratio-1x1 mb-3" tabindex="0">
+                <img src="../content/images/squidward.png" class="img-fluid rounded ratio ratio-1x1 mb-3" alt="Image of President">
+                <div class="overlay rounded-1">
+                    <p class="text-white fw-bold text-center mt-3 blockquote">"Put your heart, mind, and soul into even your smallest acts. This is the secret of success."</p>
+                </div>
+            </div>
+            <h2 class="fw-bold text-white font-size-115">Squidward Tentacles</h2>
+            <h2 class="fw-bold text-white font-size-090">4th Year Medic</h2>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm p-4">
+            <h1 class="fw-bolder text-white font-size-250 text-wrap">Treasurer</h1>
+            <div class="position-relative slide-in ratio ratio-1x1 mb-3" tabindex="0">
+                <img src="../content/images/plankton.png" class="img-fluid rounded ratio ratio-1x1 mb-3" alt="Image of President">
+                <div class="overlay rounded-1">
+                    <p class="text-white fw-bold text-center mt-3 blockquote">"Put your heart, mind, and soul into even your smallest acts. This is the secret of success."</p>
+                </div>
+            </div>
+            <h2 class="fw-bold text-white font-size-115">Plankton</h2>
+            <h2 class="fw-bold text-white font-size-090">1st Year Medic</h2>
+        </div>
+        <div class="col-sm p-4">
+            <h1 class="fw-bolder text-white font-size-250 text-wrap">Year Rep.</h1>
+            <div class="position-relative slide-in ratio ratio-1x1 mb-3" tabindex="0">
+                <img src="../content/images/cheeks.png" class="img-fluid rounded ratio ratio-1x1 mb-3" alt="Image of President">
+                <div class="overlay rounded-1">
+                    <p class="text-white fw-bold text-center mt-3 blockquote">"Put your heart, mind, and soul into even your smallest acts. This is the secret of success."</p>
+                </div>
+            </div>
+            <h2 class="fw-bold text-white font-size-115">Sandy Cheeks</h2>
+            <h2 class="fw-bold text-white font-size-090">Intercalation (Anatomy)</h2>
+        </div>
+        <div class="col-sm p-4">
+            <h1 class="fw-bolder text-white font-size-250 text-wrap">Social Rep.</h1>
+            <div class="position-relative slide-in ratio ratio-1x1 mb-3" tabindex="0">
+                <img src="../content/images/lobster.png" class="img-fluid rounded ratio ratio-1x1 mb-3" alt="Image of President">
+                <div class="overlay rounded-1">
+                    <p class="text-white fw-bold text-center mt-3 blockquote">"Put your heart, mind, and soul into even your smallest acts. This is the secret of success."</p>
+                </div>
+            </div>
+            <h2 class="fw-bold text-white font-size-115">Larry the Lobster</h2>
+            <h2 class="fw-bold text-white font-size-090">4th Year Medic</h2>
+        </div>
+        <div class="col-sm p-4">
+            <h1 class="fw-bolder text-white font-size-250 text-wrap">Coordinator</h1>
+            <div class="position-relative slide-in ratio ratio-1x1 mb-3" tabindex="0">
+                <img src="../content/images/gary.png" class="img-fluid rounded ratio ratio-1x1 mb-3" alt="Image of President">
+                <div class="overlay rounded-1">
+                    <p class="text-white fw-bold text-center mt-3 blockquote">"Put your heart, mind, and soul into even your smallest acts. This is the secret of success."</p>
+                </div>
+            </div>
+            <h2 class="fw-bold text-white font-size-115">Gary the Snail</h2>
+            <h2 class="fw-bold text-white font-size-090">Intercalation (Med Ed)</h2>
+        </div>
+    </div>
+</div>
+
+
+<script src="//ajax.aspnetcdn.com/ajax/jquery/jquery-2.1.4.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+<script src="../styles/bootstrap-5.3.1-dist/js/bootstrap.min.js"></script>
+
+
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        var aspectRatioContainers = document.querySelectorAll(".aspect-ratio");
+
+        aspectRatioContainers.forEach(function (container) {
+            container.addEventListener("click", function () {
+                this.querySelector(".overlay").classList.toggle("active");
+            });
+        });
+    });
+</script>
+
+</body>
+</html>

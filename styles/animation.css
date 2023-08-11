@@ -1,0 +1,183 @@
+﻿/* FADE IN FROM BOTTOM ANIMATION */
+
+.css-animation, .css-animation span {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+
+.css-animation span {
+    display: inline-block
+}
+
+.fade-in-bottom {
+    animation-name: fade-in-bottom
+}
+
+@keyframes fade-in-bottom {
+    from {
+        opacity: 0;
+        transform: translateY(100%);
+    }
+    to {
+        opacity: 1
+    }
+}
+
+/* BRAINLEEDS TITLE ANIMATION */
+
+#title {
+    animation: colour 1.75s ease forwards 1.5s;
+    scale: 0.7;
+}
+
+#title path:nth-child(1) {
+    stroke-dasharray: 397px;
+    stroke-dashoffset: 397px;
+    animation: line-anim 1.25s ease forwards;
+}
+
+#title path:nth-child(2) {
+    stroke-dasharray: 366px;
+    stroke-dashoffset: 366px;
+    animation: line-anim 1.35s ease forwards 0.15s;
+}
+
+#title path:nth-child(3) {
+    stroke-dasharray: 331px;
+    stroke-dashoffset: 331px;
+    animation: line-anim 1.35s ease forwards 0.3s;
+}
+
+#title path:nth-child(4) {
+    stroke-dasharray: 175px;
+    stroke-dashoffset: 175px;
+    animation: line-anim 1.35s ease forwards 0.45s;
+}
+
+#title path:nth-child(5) {
+    stroke-dasharray: 389px;
+    stroke-dashoffset: 389px;
+    animation: line-anim 1.35s ease forwards 0.6s;
+}
+
+#title path:nth-child(6) {
+    stroke-dasharray: 244px;
+    stroke-dashoffset: 244px;
+    animation: line-anim 1.35s ease forwards 0.75s;
+}
+
+#title path:nth-child(7) {
+    stroke-dasharray: 363px;
+    stroke-dashoffset: 363px;
+    animation: line-anim 1.35s ease forwards 0.9s;
+}
+
+#title path:nth-child(8) {
+    stroke-dasharray: 363px;
+    stroke-dashoffset: 363px;
+    animation: line-anim 1.35s ease forwards 1.05s;
+}
+
+#title path:nth-child(9) {
+    stroke-dasharray: 363px;
+    stroke-dashoffset: 363px;
+    animation: line-anim 1.35s ease forwards 1.2s;
+}
+
+#title path:nth-child(10) {
+    stroke-dasharray: 341px;
+    stroke-dashoffset: 341px;
+    animation: line-anim 1.35s ease forwards 1.35s;
+}
+
+@keyframes line-anim {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+@keyframes colour {
+    from {
+        fill: transparent;
+    }
+    to {
+        fill: white;
+    }
+}
+
+/* BRAIN ANIMATION */
+
+svg {
+    width: 40em;
+    max-width: 100%;
+}
+
+@media (max-width: 768px) {
+    svg {
+        max-width: 20em;
+    }
+}
+
+
+.st2 {
+    fill: none;
+    stroke: pink;
+    stroke-width: 0.5;
+    stroke-miterlimit: 10;
+    stroke-dasharray: 150;
+    stroke-dashoffset: 150;
+    animation-name: draw;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+}
+
+@keyframes draw {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+.st3 {
+    fill: none;
+    stroke: pink;
+    stroke-width: 0.35;
+    stroke-miterlimit: 10;
+    stroke-dasharray: 150;
+    stroke-dashoffset: 150;
+    animation-name: draw;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+}
+
+.st4 {
+    fill: none;
+    stroke: pink;
+    stroke-width: 0.5;
+    stroke-miterlimit: 10;
+    stroke-dasharray: 300;
+    stroke-dashoffset: 300;
+    animation-name: draw;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+}
+
+.st5 {
+    fill: none;
+    stroke: white;
+    stroke-width: 0.35;
+    stroke-miterlimit: 10;
+    stroke-dasharray: 300;
+    stroke-dashoffset: 300;
+    animation-name: draw;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+}
+
